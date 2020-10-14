@@ -24,6 +24,11 @@
 \RequirePackage{graphicx}
 \RequirePackage{tikz}
 
+% Options
+\DeclareOptionBeamer{cmc}{\PassOptionsToPackage{cmc=#1}{beamerinnerthemecrewes}}
+\ProcessOptionsBeamer
+
+
 % Settings
 \useinnertheme{crewes}
 \useoutertheme{crewes}

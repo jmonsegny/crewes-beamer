@@ -18,6 +18,10 @@
 
 \mode<presentation>
 
+% Options
+\DeclareOptionBeamer{cmc}{\def\beamer@crewes@cmc{#1}}    
+\ProcessOptionsBeamer
+
 % Font types
 \setbeamerfont{title}{size=\Huge,series=\bfseries,family=\rmfamily,shape=\upshape}
 \setbeamerfont{author}{size=\normalsize,series=\bfseries,family=\rmfamily,shape=\upshape}
@@ -42,9 +46,9 @@
       {\begin{beamercolorbox}{url}
        \usebeamerfont{url}www.crewes.org%
        \end{beamercolorbox}};
-    \fill[color=crewesblue] (0,8.18) rectangle (\the\paperwidth,8.28); % Blue line
+    \fill[color=crewesblue] (0,8.18) rectangle (\the\paperwidth,8.28); % Blue line    
     \node (creweslogo) at (3.5,0.4)% Additional logos at the bottom
-      {\includegraphics[scale=0.17]{crewesimg/sublogos.pdf}};
+      {\includegraphics[scale=0.17]{crewesimg/sublogos\beamer@crewes@cmc.pdf}};
    \end{tikzpicture}   
   \fi
 }

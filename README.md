@@ -1,7 +1,7 @@
 # Beamer package for CREWES presentations
 Crewes is [Consortium for Research in Elastic Wave Exploration Seismology](https://www.crewes.org/)
 
-This beamer theme to format presentations in the current Crewes format. 
+This is the beamer theme to format presentations in the current Crewes format. 
 
 ## Title slide example
 
@@ -27,16 +27,20 @@ Use beamer as the document class in the Latex source:
 The aspect ratio should be 16:9 as this is the official Crewes format. 
 Other aspect ratios will fail.
 
-Select the crewes theme:
+If you are not sponsored by CMC, select the crewes theme this way:
 
 `\usetheme{crewes}`
+
+In case you are sponsored by CMC, select the crewes theme this other way:
+
+`\usetheme[cmc=cmc]{crewes}`
 
 The packages files should be installed in Latex or at least in the
 same directory as the presentation.
 
 The rest of the format follows Beamer conventions. See example.
 
-Note: Command `framesubtitle` does not work due that the Crewes
+Note: Command `framesubtitle` does not print anything due that the Crewes
 format does not have space for a subtitle in the slide.
 
 ## Package files
