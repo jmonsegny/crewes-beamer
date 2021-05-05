@@ -18,14 +18,29 @@
 
 \mode<presentation>
 
+% Options
+\DeclareOptionBeamer{miniframes}{\def\beamer@crewes@miniframes{#1}}    
+\ProcessOptionsBeamer
+
 % Frame title
 \defbeamertemplate*{frametitle}{crewes}[1][]
 {
-    \begin{tikzpicture}
-        \useasboundingbox[fill=white](1.2,0) rectangle (\the\paperwidth,0.66);
-        \node[anchor=west] at (1,0.33)% Title
-         {\insertframetitle}; 
-    \end{tikzpicture}        
+    \ifx\beamer@crewes@miniframes\@empty% Insert navigation above title
+        \vskip-0.3cm%
+        \begin{beamercolorbox}[wd=\paperwidth]{}
+            \usebeamerfont{nav}\insertnavigation{\paperwidth}%
+        \end{beamercolorbox}         
+        \begin{beamercolorbox}[wd=\textwidth,leftskip=0.03cm,#1]{frametitle}
+        \usebeamerfont{frametitle}\insertframetitle%
+        \end{beamercolorbox}
+        \vskip0.3cm
+    \else% Only title
+        \begin{tikzpicture}
+            \useasboundingbox[fill=white](1.2,0) rectangle (\the\paperwidth,0.66);
+            \node[anchor=west] at (1,0.33)% Title
+            {\insertframetitle}; 
+        \end{tikzpicture}
+    \fi
 }
 
 \mode<all>
