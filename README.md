@@ -5,7 +5,7 @@ This is the beamer theme to format presentations in the current Crewes format.
 
 ## Title slide example
 
-![Title slide example](./images/titleslide.png) 
+<img src="./images/titleslide.png" alt="Title slide example" width="50%"/>
 
 ## Body slide example
 
@@ -33,7 +33,15 @@ If you are not sponsored by CMC, select the crewes theme this way:
 
 In case you are sponsored by CMC, select the crewes theme this other way:
 
-`\usetheme[cmc=cmc]{crewes}`
+`\usetheme[cmc]{crewes}`
+
+![CMC title slide example](./images/titleslidecmc.png) 
+
+You can also use the miniframes option to have a navigation bar on top of the frames:
+
+`\usetheme[miniframes]{crewes}`
+
+![miniframes slide example](./images/miniframes.png)
 
 The packages files should be installed in Latex or at least in the
 same directory as the presentation.
@@ -48,6 +56,7 @@ format does not have space for a subtitle in the slide.
 * beamerthemecrewes.sty
 * beamerouterthemecrewes.sty
 * beamerinnerthemecrewes.sty
+* beamerfontthemecrewes.sty
 * beamercolorthemecrewes.sty
 * Everything inside folder crewesimg
 
