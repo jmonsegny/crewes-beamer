@@ -5,11 +5,11 @@ This is the beamer theme to format presentations in the current Crewes format.
 
 ## Title slide example
 
-<img src="./images/titleslide.png" alt="Title slide example" width="50%"/>
+<img src="./images/titleslide.png" alt="Title slide example" width="75%"/>
 
 ## Body slide example
 
-![Body slide example](./images/bodyslide.png)
+<img src="./images/bodyslide.png" alt="Body slide example" width="75%"/>
 
 ## Prerequisites
 
@@ -35,13 +35,13 @@ In case you are sponsored by CMC, select the crewes theme this other way:
 
 `\usetheme[cmc]{crewes}`
 
-![CMC title slide example](./images/titleslidecmc.png) 
+<img src="./images/titleslidecmc.png" alt="CMC title slide example" width="75%"/>
 
 You can also use the miniframes option to have a navigation bar on top of the frames:
 
 `\usetheme[miniframes]{crewes}`
 
-![miniframes slide example](./images/miniframes.png)
+<img src="./images/miniframes.png" alt="Miniframes slide example" width="75%"/>
 
 The packages files should be installed in Latex or at least in the
 same directory as the presentation.
